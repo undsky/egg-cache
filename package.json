@@ -1,6 +1,6 @@
 {
   "name": "egg-cache",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "eggPlugin": {
     "name": "cache"
@@ -12,7 +12,7 @@
     "egg-cache",
     "cache",
     "memory",
-    "disk",
+    "fs",
     "redis"
   ],
   "dependencies": {
