@@ -1,36 +1,32 @@
-# egg-cache
-
-[![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
-[![Known Vulnerabilities][snyk-image]][snyk-url]
-[![npm download][download-image]][download-url]
-
-[npm-image]: https://img.shields.io/npm/v/egg-cache.svg?style=flat-square
-[npm-url]: https://npmjs.org/package/egg-cache
-[travis-image]: https://img.shields.io/travis/eggjs/egg-cache.svg?style=flat-square
-[travis-url]: https://travis-ci.org/eggjs/egg-cache
-[codecov-image]: https://img.shields.io/codecov/c/github/eggjs/egg-cache.svg?style=flat-square
-[codecov-url]: https://codecov.io/github/eggjs/egg-cache?branch=master
-[david-image]: https://img.shields.io/david/eggjs/egg-cache.svg?style=flat-square
-[david-url]: https://david-dm.org/eggjs/egg-cache
-[snyk-image]: https://snyk.io/test/npm/egg-cache/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/egg-cache
-[download-image]: https://img.shields.io/npm/dm/egg-cache.svg?style=flat-square
-[download-url]: https://npmjs.org/package/egg-cache
-
 <!--
-Description here.
+ * @Author: 姜彦汐
+ * @Date: 2020-12-24 10:54:22
+ * @LastEditors: 姜彦汐
+ * @LastEditTime: 2021-01-05 11:09:05
+ * @Description: 
+ * @Contact: jiangyanxi@live.com
+ * @FilePath: /egg-cache/README.md
 -->
-
-## Install
+# egg-cache
+## 安装
 
 ```bash
 $ npm i egg-cache --save
+# or
+$ yarn add egg-cache
 ```
 
-## Usage
+## 依赖说明
+
+### 依赖的 egg 版本
+
+egg-cache 版本 | egg 2.x | egg 1.x
+--- | --- | ---
+1.x | 😁 | ❌
+
+### 依赖的插件
+
+## 使用
 
 ```js
 // {app_root}/config/plugin.js
@@ -40,24 +36,27 @@ exports.cache = {
 };
 ```
 
-## Configuration
+## 配置
 
 ```js
 // {app_root}/config/config.default.js
-exports.cache = {
+config.cache = {
+   ttl: 60, // 缓存时长（秒）
+   fs: {
+       path: path.join(appInfo.baseDir, 'cache'), // 缓存路径
+       maxsize: 10 * 1024 * 1024 // 10M
+   },
+   redis: null
 };
 ```
 
-see [config/config.default.js](config/config.default.js) for more detail.
+## 示例
 
-## Example
-
-<!-- example here -->
-
-## Questions & Suggestions
-
-Please open an issue [here](https://github.com/eggjs/egg/issues).
-
+```js
+await app.cache.fs.wrap('key', async () => {
+   return data
+})
+```
 ## License
 
 [MIT](LICENSE)
