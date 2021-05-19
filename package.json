@@ -1,6 +1,6 @@
 {
   "name": "egg-cache",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
   "eggPlugin": {
     "name": "cache"
@@ -18,7 +18,7 @@
   "dependencies": {
     "bytenode": "^1.2.2",
     "cache-manager": "^3.4.3",
-    "cache-manager-fs": "^1.0.8",
+    "cache-manager-fs-hash": "^0.0.9",
     "cache-manager-ioredis": "^2.1.0"
   },
   "devDependencies": {
