@@ -1,13 +1,6 @@
-<!--
- * @Author: 姜彦汐
- * @Date: 2020-12-24 10:54:22
- * @LastEditors: 姜彦汐
- * @LastEditTime: 2021-04-22 10:23:50
- * @Description: 
- * @Contact: jiangyanxi@live.com
- * @FilePath: /egg-cache/README.md
--->
 # egg-cache
+
+> Egg.js 缓存插件，支持内存、文件、Redis 缓存
 ## 安装
 
 ```bash
@@ -44,12 +37,19 @@ exports.cache = {
 
 ## 配置
 
+> 可根据自身需要修改以下默认配置
+
 ```js
 // {app_root}/config/config.default.js
 config.cache = {
 
 };
 ```
+
+## 示例
+
+## [点击查看更多开源项目 https://undsky.com/](https://undsky.com/)
+
 ## License
 
 [MIT](LICENSE)

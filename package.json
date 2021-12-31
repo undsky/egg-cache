@@ -11,12 +11,12 @@
     "egg-plugin",
     "egg-cache",
     "cache",
+    "cache-manager",
     "memory",
     "fs",
     "redis"
   ],
   "dependencies": {
-    "bytenode": "^1.3.4",
     "cache-manager": "^3.6.0",
     "cache-manager-fs-hash": "^1.0.0",
     "cache-manager-ioredis": "^2.1.0"
@@ -54,12 +54,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-cache.git"
+    "url": "git+https://github.com/undsky/egg-cache.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/undsky/egg/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-cache#readme",
-  "author": "",
+  "homepage": "https://github.com/undsky/egg-cache#readme",
+  "author": "姜彦汐 https://www.undsky.com",
   "license": "MIT"
 }
