@@ -4,9 +4,9 @@
 ## 安装
 
 ```bash
-$ npm i egg-cache --save
+$ npm i egg-cache-manage --save
 # or
-$ yarn add egg-cache
+$ yarn add egg-cache-manage
 ```
 
 ## 依赖说明
@@ -37,12 +37,16 @@ exports.cache = {
 
 ## 配置
 
-> 可根据自身需要修改以下默认配置
-
 ```js
 // {app_root}/config/config.default.js
 config.cache = {
-
+      ttl: 600, // 缓存时长（秒）
+      fs: {
+          path: path.join(appInfo.baseDir, 'cache'),
+          subdirs: false,
+          zip: false
+      },
+      redis: null
 };
 ```
 

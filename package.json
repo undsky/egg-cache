@@ -1,7 +1,7 @@
 {
-  "name": "egg-cache",
-  "version": "3.0.0",
-  "description": "",
+  "name": "egg-cache-manage",
+  "version": "1.0.0",
+  "description": "Egg.js 缓存插件，支持内存、文件、Redis 缓存",
   "eggPlugin": {
     "name": "cache"
   },
@@ -57,7 +57,7 @@
     "url": "git+https://github.com/undsky/egg-cache.git"
   },
   "bugs": {
-    "url": "https://github.com/undsky/egg/issues"
+    "url": "https://github.com/undsky/egg-cache/issues"
   },
   "homepage": "https://github.com/undsky/egg-cache#readme",
   "author": "姜彦汐 https://www.undsky.com",
