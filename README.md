@@ -52,7 +52,13 @@ config.cache = {
 
 ## 示例
 
-## [点击查看更多开源项目 https://undsky.com/](https://undsky.com/)
+```js
+const result = await this.app.cache.fs.wrap('key', async () => {
+  return await this.app.mysql.select('sql')
+})
+```
+
+## [查看更多项目](https://www.undsky.com)
 
 ## License
 
