@@ -1,6 +1,6 @@
 {
   "name": "egg-cache-manage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Egg.js 缓存插件，支持内存、文件、Redis 缓存",
   "eggPlugin": {
     "name": "cache"
